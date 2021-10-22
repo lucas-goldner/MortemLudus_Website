@@ -35,7 +35,9 @@ function Items({ w = 0.7, gap = 0.15 }) {
     <ScrollControls horizontal damping={6} pages={(width - xW + urls.length * xW) / width}>
       <Minimap />
       <Scroll>
-        {urls.map((url, i) => <Item key={i} index={i} position={[i * xW, 0, 0]} scale={[w, 4, 1]} url={url} />) /* prettier-ignore */}
+        {urls.map((url, i) => (
+          <Item key={i} index={i} position={[i * xW, 0, 0]} scale={[w, 4, 1]} url={url} />
+        ))}
       </Scroll>
     </ScrollControls>
   )
