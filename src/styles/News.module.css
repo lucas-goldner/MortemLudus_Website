@@ -28,7 +28,7 @@
   }
 
   .newsContainer {
-    margin-left: 17rem;
+    margin-left: 15rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -36,6 +36,6 @@
   }
 
   .newsContainer > div {
-    flex-basis: 50%; /* or - flex: 0 50% - or - flex-basis: 50% - */
+    flex-basis: 50%;
   }
 }

@@ -2,10 +2,10 @@ import styles from '../styles/Newsarticle.module.css'
 
 export const NewsArticle = ({ title, descr, img }) => {
   return (
-    <article>
+    <article className={styles.articleCon}>
       <img src={img} />
-      <h3>{title}</h3>
-      <p>{descr}</p>
+      <h3 className={styles.title}>{title}</h3>
+      <p className={styles.descr}>{descr}</p>
     </article>
   )
 }
