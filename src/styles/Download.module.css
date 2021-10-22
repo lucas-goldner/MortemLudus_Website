@@ -10,14 +10,43 @@
   margin-bottom: 5rem;
 }
 
-@media screen and (min-width: 1024px) {
-  .logo {
-    font-size: 20rem;
-    margin-bottom: 7rem;
+.backgroundText {
+  transform: skewY(-5deg);
+  top: 50%;
+  left: 45%;
+  position: absolute;
+  z-index: -999;
+}
+
+.animateText {
+  animation: text-scrolling 20s linear infinite;
+  will-change: transform;
+  display: block;
+  position: relative;
+  white-space: nowrap;
+}
+
+@keyframes text-scrolling {
+  0% {
+    transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0%, 0, 0);
   }
 }
 
-a {
+.spansText {
+  font-size: 27rem;
+  color: transparent;
+  -webkit-text-stroke: 2px #30442a;
+  text-transform: uppercase;
+  display: inline-block;
+  line-height: 0.75;
+  min-width: auto;
+  font-weight: 800;
+}
+
+.dlButton {
   position: relative;
   display: inline-block;
   padding: 25px 30px;
@@ -29,19 +58,20 @@ a {
   overflow: hidden;
   margin: 1rem 1rem 5rem 1rem;
 }
-a:hover {
+
+.dlButton:hover {
   background: white;
   color: #050801;
   box-shadow: 0 0 5px white, 0 0 25px white, 0 0 50px white, 0 0 200px white;
   -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
 }
 
-a span {
+.dlButton span {
   position: absolute;
   display: block;
 }
 
-a span:nth-child(1) {
+.dlButton span:nth-child(1) {
   top: 0;
   left: 0;
   width: 100%;
@@ -58,7 +88,7 @@ a span:nth-child(1) {
     left: 100%;
   }
 }
-a span:nth-child(2) {
+.dlButton span:nth-child(2) {
   top: -100%;
   right: 0;
   width: 2px;
@@ -67,6 +97,7 @@ a span:nth-child(2) {
   animation: animate2 1s linear infinite;
   animation-delay: 0.25s;
 }
+
 @keyframes animate2 {
   0% {
     top: -100%;
@@ -76,7 +107,8 @@ a span:nth-child(2) {
     top: 100%;
   }
 }
-a span:nth-child(3) {
+
+.dlButton span:nth-child(3) {
   bottom: 0;
   right: 0;
   width: 100%;
@@ -85,6 +117,7 @@ a span:nth-child(3) {
   animation: animate3 1s linear infinite;
   animation-delay: 0.5s;
 }
+
 @keyframes animate3 {
   0% {
     right: -100%;
@@ -95,7 +128,7 @@ a span:nth-child(3) {
   }
 }
 
-a span:nth-child(4) {
+.dlButton span:nth-child(4) {
   bottom: -100%;
   left: 0;
   width: 2px;
@@ -104,6 +137,7 @@ a span:nth-child(4) {
   animation: animate4 1s linear infinite;
   animation-delay: 0.75s;
 }
+
 @keyframes animate4 {
   0% {
     bottom: -100%;
@@ -111,5 +145,12 @@ a span:nth-child(4) {
   50%,
   100% {
     bottom: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .logo {
+    font-size: 15rem;
+    margin-bottom: 7rem;
   }
 }
