@@ -12,14 +12,14 @@
 
 .backgroundText {
   transform: skewY(-5deg);
-  top: 50%;
+  top: 55%;
   left: 45%;
   position: absolute;
   z-index: -999;
 }
 
 .animateText {
-  animation: text-scrolling 20s linear infinite;
+  animation: text-scrolling 25s linear infinite;
   will-change: transform;
   display: block;
   position: relative;
@@ -35,10 +35,32 @@
   }
 }
 
-.spansText {
+.spansTextBlue {
   font-size: 27rem;
   color: transparent;
-  -webkit-text-stroke: 2px #30442a;
+  -webkit-text-stroke: 2px #03e9f4;
+  text-transform: uppercase;
+  display: inline-block;
+  line-height: 0.75;
+  min-width: auto;
+  font-weight: 800;
+}
+
+.spansTextPink {
+  font-size: 27rem;
+  color: transparent;
+  -webkit-text-stroke: 2px #fbaefb;
+  text-transform: uppercase;
+  display: inline-block;
+  line-height: 0.75;
+  min-width: auto;
+  font-weight: 800;
+}
+
+.spansTextGreen {
+  font-size: 27rem;
+  color: transparent;
+  -webkit-text-stroke: 2px #a4de69;
   text-transform: uppercase;
   display: inline-block;
   line-height: 0.75;

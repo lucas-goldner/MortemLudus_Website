@@ -17,7 +17,7 @@ export const App = () => {
         {new Date().getMonth() + '/' + new Date().getDay() + '/' + new Date().getFullYear()}
       </div>
       <Slideshow />
-      <Download />
+      <Download number={randomNumber} />
     </>
   )
 }
