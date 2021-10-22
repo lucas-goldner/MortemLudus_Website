@@ -12,14 +12,15 @@
 
 .backgroundText {
   transform: skewY(-5deg);
-  top: 55%;
-  left: 45%;
+  top: 85%;
+  width: 100%;
   position: absolute;
   z-index: -999;
+  overflow-x: hidden;
 }
 
 .animateText {
-  animation: text-scrolling 25s linear infinite;
+  animation: text-scrolling 23s linear infinite;
   will-change: transform;
   display: block;
   position: relative;

@@ -1,4 +1,5 @@
 import { Download } from './components/Download'
+import { News } from './components/News'
 import { Slideshow } from './components/Slideshow'
 import { oneTwoThree } from './util'
 
@@ -18,6 +19,7 @@ export const App = () => {
       </div>
       <Slideshow />
       <Download number={randomNumber} />
+      <News />
     </>
   )
 }
