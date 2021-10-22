@@ -1,3 +1,4 @@
+import ContactUs from './components/Contactus'
 import { Download } from './components/Download'
 import { News } from './components/News'
 import { Slideshow } from './components/Slideshow'
@@ -20,6 +21,7 @@ export const App = () => {
       <Slideshow />
       <Download number={randomNumber} />
       <News />
+      <ContactUs />
     </>
   )
 }

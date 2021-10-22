@@ -1,0 +1,171 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.socialCon {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  align-items: center;
+}
+
+.firstCon {
+  border: 1px white solid;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.circle {
+  border: 1px solid white;
+  height: 2rem;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  width: 2rem;
+  position: relative;
+  margin-right: 0.8rem;
+}
+
+.secondCon {
+  margin-top: 1rem;
+  border: 1px white solid;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  position: absolute;
+  font-size: 1.2rem;
+  top: 20%;
+  left: 20%;
+  color: white;
+}
+
+.socialIcon {
+  font-size: 2rem;
+  color: white;
+}
+
+.firstConTitle {
+  text-align: center;
+  width: 100%;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.secondConTitle {
+  text-align: center;
+  width: 100%;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.socialIconsCon {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.error {
+  color: red;
+}
+
+.success {
+  color: green;
+}
+
+.input {
+  background-color: transparent;
+  margin-top: 1rem;
+  width: 85%;
+  padding: 1rem;
+  margin-left: 1rem;
+  margin-right: auto;
+  border: 1px solid white;
+  color: white;
+}
+
+.sendButton {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: auto;
+  width: 50%;
+  padding: 1rem;
+  border: 1px solid #40404060;
+  margin-bottom: 1rem;
+  background-color: #404040;
+  color: white;
+  transition: all 0.5s;
+}
+
+.sendButton:hover {
+  background-color: white;
+  color: black;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    display: row;
+    flex-direction: row;
+    margin-top: 3rem;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .firstCon {
+    background-color: transparent;
+    border: 1px white solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 15%;
+    margin-left: 5rem;
+    margin-right: 0.5rem;
+    padding: 10rem 5rem;
+  }
+
+  .secondCon {
+    min-width: 50%;
+    padding: 10rem 5rem;
+    margin-top: 0rem;
+  }
+
+  .secondConTitle {
+    text-align: start;
+    margin-left: 1rem;
+    margin-right: auto;
+  }
+
+  .firstConTitle {
+    margin-top: 3rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .socialIconsCon {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  .socialIcon {
+    font-size: 2.5rem;
+    margin-right: 0rem;
+    color: white;
+  }
+
+  .sendButton {
+    max-width: 20%;
+  }
+}
