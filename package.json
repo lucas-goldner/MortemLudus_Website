@@ -1,11 +1,10 @@
 {
-  "name": "scrollcontrols-demo-website-horizontal-panes",
+  "name": "mortem-ludus-website",
   "version": "1.0.0",
-  "description": "How to tie canvas objects to scrollTop while events keep working.",
+  "description": "The official Mortem Ludus website made by Lucas Goldner.",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
-    "@pmndrs/branding": "0.0.8",
     "@react-icons/all-files": "^4.1.0",
     "@react-three/drei": "7.16.7",
     "@react-three/fiber": "7.0.16",
