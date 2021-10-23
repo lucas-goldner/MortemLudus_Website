@@ -3,6 +3,15 @@
   flex-direction: column;
 }
 
+.img {
+  width: 95%;
+  transition: all 0.5s;
+}
+
+.img:hover {
+  width: 100%;
+}
+
 .title {
   font-size: 2rem;
   margin-bottom: 0rem;
