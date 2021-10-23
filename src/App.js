@@ -1,27 +1,16 @@
-import ContactUs from './components/Contactus'
-import { Download } from './components/Download'
-import { News } from './components/News'
-import { Slideshow } from './components/Slideshow'
-import { oneTwoThree } from './util'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { Home } from './container/home'
+import { NewsPage } from './container/news'
 
 export const App = () => {
-  const randomNumber = oneTwoThree()
   return (
     <>
-      <div
-        style={{
-          position: 'absolute',
-          top: 30,
-          right: 50,
-          fontSize: '13px',
-          color: randomNumber === 1 ? '#FBAEFB' : randomNumber === 2 ? '#a4de69' : '#03e9f4'
-        }}>
-        {new Date().getMonth() + '/' + new Date().getDay() + '/' + new Date().getFullYear()}
-      </div>
-      <Slideshow />
-      <Download number={randomNumber} />
-      <News />
-      <ContactUs number={randomNumber} />
+      <BrowserRouter basename={'/'}>
+        <Switch>
+          <Route exact path={`/`} component={Home} />
+          <Route exact path={`/news`} component={NewsPage} />
+        </Switch>
+      </BrowserRouter>
     </>
   )
 }
