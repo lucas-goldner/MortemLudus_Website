@@ -5,6 +5,7 @@ import { Image, ScrollControls, Scroll, useScroll } from '@react-three/drei'
 import { useSnapshot } from 'valtio'
 import { Minimap } from './Minimap'
 import { state, damp } from '../util'
+import { useHistory } from 'react-router-dom'
 
 function Item({ index, position, scale, c = new THREE.Color(), ...props }) {
   const ref = useRef()
