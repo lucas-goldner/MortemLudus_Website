@@ -5,7 +5,7 @@ import { RiMapPinFill } from '@react-icons/all-files/ri/RiMapPinFill'
 import { useState } from 'react'
 import styles from '../styles/Contactus.module.css'
 
-const ContactUs = () => {
+const ContactUs = ({ number }) => {
   const [name, setName] = useState('')
 
   const [email, setEmail] = useState('')
@@ -94,7 +94,9 @@ const ContactUs = () => {
         <input value={subject} onInput={(text) => setSubject(text.target.value)} placeholder="Topic" className={styles.input} />
         <input value={message} onInput={(text) => setMessage(text.target.value)} placeholder="Your message" className={styles.input} />
         {status == '' ? <></> : <p className={error ? styles.error : styles.success}>{status}</p>}
-        <button className={styles.sendButton} onClick={() => addFeedback()}>
+        <button
+          className={number === 1 ? styles.sendButtonPink : number === 2 ? styles.sendButtonGreen : styles.sendButtonBlue}
+          onClick={() => addFeedback()}>
           SEND
         </button>
       </div>

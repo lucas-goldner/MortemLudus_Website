@@ -96,22 +96,58 @@
   color: white;
 }
 
-.sendButton {
+.sendButtonPink {
   margin-top: 1rem;
   margin-left: 1rem;
   margin-right: auto;
-  width: 50%;
-  padding: 1rem;
-  border: 1px solid #40404060;
+  max-width: 50%;
+  padding: 1rem 3rem;
+  border: 1px solid #fbaefb;
   margin-bottom: 1rem;
-  background-color: #404040;
-  color: white;
+  background-color: #fbaefb;
+  color: #151515;
   transition: all 0.5s;
 }
 
-.sendButton:hover {
-  background-color: white;
-  color: black;
+.sendButtonGreen {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: auto;
+  max-width: 50%;
+  padding: 1rem 3rem;
+  border: 1px solid #a4de69;
+  margin-bottom: 1rem;
+  background-color: #a4de69;
+  color: #151515;
+  transition: all 0.5s;
+}
+
+.sendButtonBlue {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: auto;
+  max-width: 50%;
+  padding: 1rem 3rem;
+  border: 1px solid #03e9f4;
+  margin-bottom: 1rem;
+  background-color: #03e9f4;
+  color: #151515;
+  transition: all 0.5s;
+}
+
+.sendButtonPink:hover {
+  background-color: #151515;
+  color: white;
+}
+
+.sendButtonGreen:hover {
+  background-color: #151515;
+  color: white;
+}
+
+.sendButtonBlue:hover {
+  background-color: #151515;
+  color: white;
 }
 
 @media screen and (min-width: 1024px) {

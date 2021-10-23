@@ -21,7 +21,7 @@ export const App = () => {
       <Slideshow />
       <Download number={randomNumber} />
       <News />
-      <ContactUs />
+      <ContactUs number={randomNumber} />
     </>
   )
 }
