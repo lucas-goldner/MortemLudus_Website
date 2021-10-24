@@ -16,7 +16,7 @@ export const Home = () => {
           fontSize: '13px',
           color: randomNumber === 1 ? '#FBAEFB' : randomNumber === 2 ? '#a4de69' : '#03e9f4'
         }}>
-        {new Date().getMonth() + '/' + new Date().getDay() + '/' + new Date().getFullYear()}
+        {new Date().getMonth() + 1 + '/' + new Date().getDate() + '/' + new Date().getFullYear()}
       </div>
       <Slideshow />
       <Download number={randomNumber} />
