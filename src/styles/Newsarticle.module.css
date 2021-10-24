@@ -4,7 +4,7 @@
 }
 
 .img {
-  width: 95%;
+  width: 100%;
   transition: all 0.5s;
 }
 
@@ -30,5 +30,10 @@
     flex-direction: column;
     margin-left: 3rem;
     flex-basis: 50%;
+  }
+
+  .img {
+    width: 95%;
+    transition: all 0.5s;
   }
 }
