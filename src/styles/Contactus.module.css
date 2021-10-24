@@ -167,7 +167,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    max-width: 15%;
+
+    min-width: 20%;
     margin-left: 5rem;
     margin-right: 0.5rem;
     padding: 10rem 5rem;
