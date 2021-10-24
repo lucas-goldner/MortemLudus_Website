@@ -20,7 +20,7 @@
 }
 
 .animateText {
-  animation: text-scrolling 35s linear infinite;
+  animation: text-scrolling 10s linear infinite;
   will-change: transform;
   display: block;
   position: relative;
@@ -37,7 +37,7 @@
 }
 
 .spansTextBlue {
-  font-size: 27rem;
+  font-size: 20rem;
   color: transparent;
   -webkit-text-stroke: 2px #03e9f4;
   text-transform: uppercase;
@@ -175,5 +175,24 @@
   .logo {
     font-size: 15rem;
     margin-bottom: 7rem;
+  }
+
+  .animateText {
+    animation: text-scrolling 35s linear infinite;
+    will-change: transform;
+    display: block;
+    position: relative;
+    white-space: nowrap;
+  }
+
+  .spansTextBlue {
+    font-size: 27rem;
+    color: transparent;
+    -webkit-text-stroke: 2px #03e9f4;
+    text-transform: uppercase;
+    display: inline-block;
+    line-height: 0.75;
+    min-width: auto;
+    font-weight: 800;
   }
 }
