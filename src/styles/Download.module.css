@@ -20,7 +20,7 @@
 }
 
 .animateText {
-  animation: text-scrolling 23s linear infinite;
+  animation: text-scrolling 35s linear infinite;
   will-change: transform;
   display: block;
   position: relative;
