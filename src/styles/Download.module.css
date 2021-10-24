@@ -16,7 +16,7 @@
   width: 100%;
   position: absolute;
   z-index: -999;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .animateText {
