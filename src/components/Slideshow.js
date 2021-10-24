@@ -5,10 +5,8 @@ import { Image, ScrollControls, Scroll, useScroll } from '@react-three/drei'
 import { useSnapshot } from 'valtio'
 import { Minimap } from './Minimap'
 import { state, damp } from '../util'
-import { useHistory } from 'react-router-dom'
 
-function Item({ index, position, scale, c = new THREE.Color(), ...props }) {
-  const history = useHistory()
+function Item({ index, position, scale, c = new THREE.Color(), history, ...props }) {
   const ref = useRef()
   const scroll = useScroll()
   const { clicked, urls } = useSnapshot(state)
@@ -19,7 +17,7 @@ function Item({ index, position, scale, c = new THREE.Color(), ...props }) {
       state.clicked = index === clicked ? null : index
       setRedirectClick(true)
     } else {
-      window.location.href = '/fighter'
+      history.push('/fighter')
     }
   }
   const over = () => hover(true)
@@ -45,7 +43,7 @@ function Item({ index, position, scale, c = new THREE.Color(), ...props }) {
   return <Image ref={ref} {...props} position={position} scale={scale} onClick={click} onPointerOver={over} onPointerOut={out} />
 }
 
-function Items({ w = 0.7, gap = 0.15 }) {
+function Items({ w = 0.7, gap = 0.15, history }) {
   const { urls } = useSnapshot(state)
   const { width } = useThree((state) => state.viewport)
   const xW = w + gap
@@ -55,15 +53,15 @@ function Items({ w = 0.7, gap = 0.15 }) {
       <Minimap />
       <Scroll>
         {urls.map((url, i) => (
-          <Item key={i} index={i} position={[i * xW, 0, 0]} scale={[w, 4, 1]} url={url} />
+          <Item key={i} index={i} position={[i * xW, 0, 0]} scale={[w, 4, 1]} url={url} history={history} />
         ))}
       </Scroll>
     </ScrollControls>
   )
 }
 
-export const Slideshow = () => (
+export const Slideshow = ({ history }) => (
   <Canvas gl={{ antialias: false }} dpr={[1, 1.5]} onPointerMissed={() => (state.clicked = null)}>
-    <Items />
+    <Items history={history} />
   </Canvas>
 )

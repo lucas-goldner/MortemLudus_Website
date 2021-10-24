@@ -1,3 +1,4 @@
+import { useHistory } from 'react-router-dom'
 import ContactUs from '../components/Contactus'
 import { Download } from '../components/Download'
 import { News } from '../components/News'
@@ -6,6 +7,8 @@ import { oneTwoThree } from '../util'
 
 export const Home = () => {
   const randomNumber = oneTwoThree()
+  const history = useHistory()
+
   return (
     <>
       <div
@@ -18,7 +21,7 @@ export const Home = () => {
         }}>
         {new Date().getMonth() + 1 + '/' + new Date().getDate() + '/' + new Date().getFullYear()}
       </div>
-      <Slideshow />
+      <Slideshow history={history} />
       <Download number={randomNumber} />
       <News />
       <ContactUs number={randomNumber} />
