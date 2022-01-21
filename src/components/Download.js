@@ -29,7 +29,7 @@ export const Download = ({ number }) => {
           </span>
         </div>
       </div>
-      <h1 className={styles.logo}>Logo</h1>
+      <img className={styles.logo} src={'/mortem_ludus_logo.png'} />
       <a className={styles.dlButton} href="#">
         <span></span>
         <span></span>

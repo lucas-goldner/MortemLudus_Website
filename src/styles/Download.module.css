@@ -7,7 +7,10 @@
 }
 
 .logo {
-  margin-bottom: 5rem;
+  width: 10rem;
+  height: 10rem;
+  border: white 1px solid;
+  margin-bottom: 3rem;
 }
 
 .backgroundText {
@@ -173,8 +176,10 @@
 
 @media screen and (min-width: 1024px) {
   .logo {
-    font-size: 15rem;
-    margin-bottom: 7rem;
+    width: 20rem;
+    height: 20rem;
+    border: white 1px solid;
+    margin-bottom: 3rem;
   }
 
   .animateText {
