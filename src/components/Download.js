@@ -30,12 +30,12 @@ export const Download = ({ number }) => {
         </div>
       </div>
       <img className={styles.logo} src={'/mortem_ludus_logo.png'} />
-      <a className={styles.dlButton} href="#">
+      <a className={styles.dlButton} href="https://drive.google.com/file/d/1Rc_AT3cgkONq-jj5Skyj1CknmAFAgTNZ/view?usp=sharing">
         <span></span>
         <span></span>
         <span></span>
         <span></span>
-        Coming soon
+        Download Alpha 0.1
       </a>
     </section>
   )
